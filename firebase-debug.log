@@ -1,0 +1,81 @@
+[debug] [2022-11-27T18:17:06.353Z] ----------------------------------------------------------------------
+[debug] [2022-11-27T18:17:06.355Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2022-11-27T18:17:06.356Z] CLI Version:   11.15.0
+[debug] [2022-11-27T18:17:06.356Z] Platform:      darwin
+[debug] [2022-11-27T18:17:06.356Z] Node Version:  v18.9.0
+[debug] [2022-11-27T18:17:06.357Z] Time:          Sun Nov 27 2022 19:17:06 GMT+0100 (West Africa Standard Time)
+[debug] [2022-11-27T18:17:06.358Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-27T18:17:06.426Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-27T18:17:06.427Z] > authorizing via signed-in user (tundeloper@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/babatundeisiaka/Documents/new copy
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-11-27T18:18:10.522Z] Using project from CLI flag: order-bb0f5
+[debug] [2022-11-27T18:18:10.524Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/order-bb0f5 [none]
+[debug] [2022-11-27T18:18:11.966Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/order-bb0f5 200
+[debug] [2022-11-27T18:18:11.966Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/order-bb0f5 {"projectId":"order-bb0f5","projectNumber":"149888768026","displayName":"Order","name":"projects/order-bb0f5","resources":{"hostingSite":"order-bb0f5","realtimeDatabaseInstance":"order-bb0f5-default-rtdb"},"state":"ACTIVE","etag":"1_81f9e30d-aadb-4d73-a07e-e7d2cdb3d85d"}
+[info] i  Using project order-bb0f5 (Order) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at /Users/babatundeisiaka/Documents/new copy 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=599626474&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-11-27T18:18:12.859Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-11-27T18:18:12.859Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-11-27T18:18:13.557Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-11-27T18:18:13.557Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-11-27T18:18:13.567Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-11-27T18:18:14.421Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-11-27T18:18:14.422Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"tundeloper","id":68726835,"node_id":"MDQ6VXNlcjY4NzI2ODM1","avatar_url":"https://avatars.githubusercontent.com/u/68726835?v=4","gravatar_id":"","url":"https://api.github.com/users/tundeloper","html_url":"https://github.com/tundeloper","followers_url":"https://api.github.com/users/tundeloper/followers","following_url":"https://api.github.com/users/tundeloper/following{/other_user}","gists_url":"https://api.github.com/users/tundeloper/gists{/gist_id}","starred_url":"https://api.github.com/users/tundeloper/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/tundeloper/subscriptions","organizations_url":"https://api.github.com/users/tundeloper/orgs","repos_url":"https://api.github.com/users/tundeloper/repos","events_url":"https://api.github.com/users/tundeloper/events{/privacy}","received_events_url":"https://api.github.com/users/tundeloper/received_events","type":"User","site_admin":false,"name":"Babatunde","company":null,"blog":"","location":"Lagos","email":null,"hireable":true,"bio":"frontend developer, JavaScript Engineer","twitter_username":"tudeloper","public_repos":15,"public_gists":0,"followers":3,"following":9,"created_at":"2020-07-24T06:32:12Z","updated_at":"2022-10-18T06:13:23Z","private_gists":0,"total_private_repos":5,"owned_private_repos":5,"disk_usage":58245,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as tundeloper 
+[info] 
+[debug] [2022-11-27T18:19:18.893Z] >>> [apiv2][query] GET https://api.github.com/repos/react-meal/actions/secrets/public-key type=owner
+[debug] [2022-11-27T18:19:19.522Z] <<< [apiv2][status] GET https://api.github.com/repos/react-meal/actions/secrets/public-key 404
+[debug] [2022-11-27T18:19:19.522Z] <<< [apiv2][body] GET https://api.github.com/repos/react-meal/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-27T18:19:21.909Z] >>> [apiv2][query] GET https://api.github.com/repos/react-meal/actions/secrets/public-key type=owner
+[debug] [2022-11-27T18:19:22.525Z] <<< [apiv2][status] GET https://api.github.com/repos/react-meal/actions/secrets/public-key 404
+[debug] [2022-11-27T18:19:22.525Z] <<< [apiv2][body] GET https://api.github.com/repos/react-meal/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-27T18:19:23.037Z] >>> [apiv2][query] GET https://api.github.com/repos/react-meal/actions/secrets/public-key type=owner
+[debug] [2022-11-27T18:19:23.610Z] <<< [apiv2][status] GET https://api.github.com/repos/react-meal/actions/secrets/public-key 404
+[debug] [2022-11-27T18:19:23.610Z] <<< [apiv2][body] GET https://api.github.com/repos/react-meal/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-27T18:19:30.177Z] >>> [apiv2][query] GET https://api.github.com/repos/react-meal/actions/secrets/public-key type=owner
+[debug] [2022-11-27T18:19:30.785Z] <<< [apiv2][status] GET https://api.github.com/repos/react-meal/actions/secrets/public-key 404
+[debug] [2022-11-27T18:19:30.785Z] <<< [apiv2][body] GET https://api.github.com/repos/react-meal/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-27T18:19:55.273Z] >>> [apiv2][query] GET https://api.github.com/repos/user/repository/react-meal/actions/secrets/public-key type=owner
+[debug] [2022-11-27T18:19:55.890Z] <<< [apiv2][status] GET https://api.github.com/repos/user/repository/react-meal/actions/secrets/public-key 404
+[debug] [2022-11-27T18:19:55.890Z] <<< [apiv2][body] GET https://api.github.com/repos/user/repository/react-meal/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-27T18:19:56.664Z] >>> [apiv2][query] GET https://api.github.com/repos/user/repository/react-meal/actions/secrets/public-key type=owner
+[debug] [2022-11-27T18:20:02.563Z] <<< [apiv2][status] GET https://api.github.com/repos/user/repository/react-meal/actions/secrets/public-key 404
+[debug] [2022-11-27T18:20:02.564Z] <<< [apiv2][body] GET https://api.github.com/repos/user/repository/react-meal/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-27T18:20:04.616Z] >>> [apiv2][query] GET https://api.github.com/repos/user/repository/react-meal/actions/secrets/public-key type=owner
+[debug] [2022-11-27T18:20:05.210Z] <<< [apiv2][status] GET https://api.github.com/repos/user/repository/react-meal/actions/secrets/public-key 404
+[debug] [2022-11-27T18:20:05.211Z] <<< [apiv2][body] GET https://api.github.com/repos/user/repository/react-meal/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-27T18:21:03.633Z] >>> [apiv2][query] GET https://api.github.com/repos/react-meal/actions/secrets/public-key type=owner
+[debug] [2022-11-27T18:21:04.398Z] <<< [apiv2][status] GET https://api.github.com/repos/react-meal/actions/secrets/public-key 404
+[debug] [2022-11-27T18:21:04.398Z] <<< [apiv2][body] GET https://api.github.com/repos/react-meal/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
